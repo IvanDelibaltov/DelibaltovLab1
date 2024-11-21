@@ -1,47 +1,222 @@
 <!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Список Фильмов</title>
-   
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+<html>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Мой Проект</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="home.html">Главная</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="films.html">Фильмы</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">О нас</a>
-                </li>
-            </ul>
+<style>
+    .card-hover:hover {
+        transform: translateY(-10px); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    }
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Джеймс Гандольфини</title>
+</head>
+
+<body data-spy="scroll" data-bs-target="#myScrollspy" data-offset="20">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://ru.wikipedia.org/wiki/Гандольфини,_Джеймс">Джеймс Гандольфини</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="info.html">Основная информация</a></li>
+                    <li class="nav-item"><a class="nav-link" href="films.html">Список фильмов</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-  
-    <div class="alert alert-warning m-3" role="alert">
-        Внимание! Эта страница сейчас находится в разработке.
-    </div>
+    <div class="container my-4">
+        <h2 class="mb-4">Основная информация об актёре</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Джеймс Гандольфини</h3>
+                <p><strong>Дата рождения:</strong> 18 сентября 1961 года</p>
+                <p><strong>Полных лет:</strong> Умер 19 июня 2013</p>
+                <p><strong>Фильмов:</strong> 30+</p>
+                <p><strong>Жанры:</strong> Драма, криминал, комедия, триллер, боевик, детектив.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="i.webp" class="img-fluid rounded" alt="Фото актёра">
+            </div>
+        </div>
 
-   
-    <div class="container">
-        <h1>Список Фильмов</h1>
-      
-    </div>
+        <h2 class="mt-5">Лучшие фильмы и сериалы</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/506490/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="общак.webp" class="card-img-top" alt="Общак">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Общак</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/series/79848/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="сопра.webp" class="card-img-top" alt="Сопрано">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Сопрано</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/467652/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="не.webp" class="card-img-top" alt="Не исчезай">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Не исчезай</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/400582/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="1920x.webp" class="card-img-top" alt="Опасные пассажиры поезда 123">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Опасные пассажиры поезда 123</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/406210/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="1921x (1).webp" class="card-img-top" alt="Добро пожаловать к Райли">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Добро пожаловать к Райли</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/6222/posters/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="пад (1).webp" class="card-img-top" alt="Падший">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Падший</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/5249455/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="19 (1).webp" class="card-img-top" alt="Вся королевская рать">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Вся королевская рать</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.kinopoisk.ru/film/20105/" class="text-decoration-none">
+                    <div class="card card-hover mb-4">
+                        <img src="1gth (1).webp" class="card-img-top" alt="Пережить Рождество">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Пережить Рождество</h5>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <h2 class="mt-5">Дополнительная информация</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Награды</h5>
+                        <p class="card-text">Лучшая мужская роль в драматическом сериале («Сопрано»)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Любимое блюдо</h5>
+                        <p class="card-text">Любимые блюда Хабенского - габагул
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Интересный факт</h5>
+                        <p class="card-text">Умер в Риме.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="mt-5">Фильмография</h2>
+        <table class="table table-bordered table-hover text-center mt-3">
+            <thead>
+                <tr>
+                    <th>Год</th>
+                    <th>Фильм</th>
+                    <th>Роль</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1999-2007</td>
+                    <td>Сопрано</td>
+                    <td>Тони сопрано</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Общак</td>
+                    <td>Боб Сагиновски </td>
+                </tr>
+                <tr>
+                    <td>2020</td>
+                    <td>Огонь</td>
+                    <td>Алексей Соколов</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Никки Второй/td>
+                    <td>Хенкок</td>
+                </tr>
+                <tr>
+                    <td>2011</td>
+                    <td>Добро пожаловать к Райли</td>
+                    <td>Муж</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>Мексиканец </td>
+                    <td>Мексиканец</td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>Одинокие сердца</td>
+                    <td>Тодд Робинсон</td>
+                </tr>
+                <tr>
+                    <td>1998</td>
+                    <td>Падший </td>
+                    <td>Джек</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
+
 </html>
